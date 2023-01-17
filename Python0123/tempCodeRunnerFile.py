@@ -75,7 +75,11 @@ if(opc!='A' or opc!='B' or opc!='C'or opc!='D'):
         else:
             print("Libro no encontrado")
     elif opc=='D':
-        print(biblioteca["usuarios"])
+        #Crea lista
+        lista = list()
+        #Listar
+        lista.append(biblioteca["usuarios"])
+        print(lista)
     else:
         print('OPCION INVÁLIDA')
 else:

@@ -19,11 +19,11 @@ biblioteca={
     'razón social':"Biblioteca Nacional",
     'categorias':["cuentos","novelas","ensayo","autobiografico","memorias","teatral","cientifico"],
     'usuarios':{
-        "usuario1":{"nombre":"juan",
+        "u1":{"nombre":"juan",
                     "apellido":"rodriguez",
                     "libro":[]
                     },
-        "usuario2":{"nombre":"pedro",
+        "u2":{"nombre":"pedro",
                     "apellido":"ramos",
                     "libro":[]
                     }
@@ -45,12 +45,12 @@ biblioteca={
                 "categoría":"teatral"
                 }
     },
-    "usuarioLibro":{
-        "usuario1":[],
-        "usuario2":[],
-        "usuario3":[],
-        "usuario4":[]
-    } 
+   # "usuarioLibro":{
+   #     "usuario1":[],
+   #     "usuario2":[],
+   #     "usuario3":[],
+   #     "usuario4":[]
+   # } 
 }
 ##inputs
 print(msg)
@@ -62,7 +62,7 @@ if(opc!='A' or opc!='B' or opc!='C'or opc!='D'):
     if opc=='A':
         print(biblioteca["categorias"])
     elif opc=='B':
-        clib=input("Digite el codigo del libro: ")
+        clib=input("\nDigite el codigo del libro: ")
         listaLibros=list(biblioteca["libro"].keys())
         if clib in listaLibros:
             print("\nLibro encontrado")
@@ -74,17 +74,21 @@ if(opc!='A' or opc!='B' or opc!='C'or opc!='D'):
         else:
             print("Libro no encontrado")
     elif opc=='C':
-        clib=input("Digite el codigo del libro: ")
+        clib=input("\nDigite el codigo del libro: ")
         listaLibros=list(biblioteca["libro"].keys())
         if clib in listaLibros:
             print("\nLibro encontrado")
             biblioteca["libro"][clib]["estado"]="prestado"
             comprob=biblioteca["libro"][clib]["estado"]
-            print("CAMBIADO A ",comprob)
+            print("\nCambiado a ",comprob)
         else:
             print("Libro no encontrado")
     elif opc=='D':
-        print(biblioteca["usuarios"])
+        #Crea lista
+        lista = list()
+        #Listar
+        lista.append(biblioteca["usuarios"])
+        print(lista)
     else:
         print('OPCION INVÁLIDA')
 else:
