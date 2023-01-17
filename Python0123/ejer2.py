@@ -1,3 +1,12 @@
+##Pregunta 4
+
+##Realizar un Programa que simule funcionalidades de una Biblioteca, definir la biblioteca como un diccionario.
+##La biblioteca deberá tener las siguientes operaciones:
+#-Obtener la lista de categorías de libros.
+#-Obtener  nombres de los libros y autores.
+#-poder cambiar el estado de un libro a prestado
+#-Lista de usuarios de la biblioteca.
+
 msg = """\nElija una de las siguientes operaciones:
 
 a) Lista de categorías de libros.
