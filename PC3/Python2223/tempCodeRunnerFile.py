@@ -45,8 +45,7 @@ if(opc!='A' or opc!='B' or opc!='C'or opc!='D'or opc!='E'or opc!='F'):
     elif opc=='D':
         try:
             print('\n<<<SUMA>>>\n')
-            sumar(10)
-            divi(4,0)
+            sumydiv()
         except:
             print("Ha ocurrido un error en alguna función")
         else:

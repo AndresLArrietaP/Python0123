@@ -5,6 +5,13 @@
 ##tener un método para agregar productos y otra para mostrar toda la lista de productos
 
 def tienda():
+    def nameFile():
+        if __name__=='__main__':
+            print("\nAPP")
+        else:
+            print("\nSECUNDARIO")
+            
+    nameFile()   
     class Catalogo:
         productos = [] 
         

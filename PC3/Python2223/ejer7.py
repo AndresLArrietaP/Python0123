@@ -5,6 +5,13 @@
 #método que permita imprimir el objeto de forma literal (__str__) y que me permita identificar
 #el país de origen , el numero de lote
 def codprod():
+    def nameFile():
+        if __name__=='__main__':
+            print("\nAPP")
+        else:
+            print("\nSECUNDARIO")
+            
+    nameFile()   
     class Producto:
         def __init__(self, nombre, codigo):
             self.nombre = nombre
