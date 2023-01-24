@@ -18,6 +18,7 @@ def sumar(n : int  ,repe : int =0 ,RES : int=0):
 #sumar(10)
 def divi(a,b):
     try:
+        print('\n<<<DIVISION>>>\n')
         print(f"Dividendo {a} y divisor {b}")
         return print(a/b)
     except Exception as e:
