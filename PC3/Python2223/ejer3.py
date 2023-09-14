@@ -12,6 +12,7 @@ def mu():
     valor= int(input("\nValor a multiplicar: "))
     lim = int(input("\n¿Cuantas veces multiplicar por 2? "))
     multi(valor,lim)
+    
 def multi(valor : int ,lim: int,repe : int =1  ):
     if repe <=lim:
         repe+=1

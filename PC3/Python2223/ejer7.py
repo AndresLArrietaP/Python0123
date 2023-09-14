@@ -17,7 +17,7 @@ def codprod():
             self.nombre = nombre
             self.codigo = codigo
         def __str__(self):
-            lcod=self.codigo.split(sep="-")
+            lcod=self.codigo.split(sep="-") #PERU-0001-2023
             pais=lcod[0]
             lote=lcod[1]
             return '\nNombre: {} \nPaís: {} \nLote: {} '.format(self.nombre, pais,lote)
